@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './page/navbar/page.jsx';
 import Hero from './page/hero/page.jsx';
