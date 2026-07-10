@@ -1,0 +1,177 @@
+.compare-section {
+  padding: 72px 5%;
+  background: transparent;
+  font-family: "Manrope", sans-serif;
+}
+
+.compare-header {
+  max-width: 780px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.compare-header span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: rgba(20, 216, 255, 0.13);
+  color: #155e75;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.compare-header h2 {
+  margin: 0;
+  font-size: clamp(36px, 4vw, 58px);
+  line-height: 1;
+  letter-spacing: -2.2px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.compare-header h2 strong {
+  background: linear-gradient(135deg, #14d8ff, #3b82f6, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.compare-header p {
+  max-width: 640px;
+  margin: 16px auto 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #64748b;
+}
+
+.compare-table-wrap {
+    /* max-width: 1214px; */
+    /* margin: 0 auto; */
+    /* overflow-x: auto; */
+    /* padding: 8px; */
+    /* background-color: transparent; */
+}
+.compare-table {
+  min-width: 980px;
+  overflow: hidden;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.08);
+}
+
+.compare-row {
+  display: grid;
+  grid-template-columns: 1.35fr repeat(5, 1fr);
+  min-height: 58px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.07);
+  transition: 0.25s ease;
+}
+
+.compare-row:last-child {
+  border-bottom: none;
+}
+
+.compare-row:not(.compare-head):hover {
+  background: rgba(20, 216, 255, 0.045);
+}
+
+.compare-row > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px;
+  text-align: center;
+}
+
+.compare-head {
+  min-height: 66px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.feature-col {
+  justify-content: flex-start !important;
+  text-align: left !important;
+  font-size: 14.5px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.company-col {
+  position: relative;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.company-col strong {
+  font-size: 14.5px;
+  font-weight: 900;
+}
+
+.hotelx-head {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(20, 216, 255, 0.2), transparent 45%),
+    linear-gradient(180deg, rgba(20, 216, 255, 0.14), rgba(59, 130, 246, 0.06));
+  color: #0f172a;
+}
+
+.best-badge {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #14d8ff, #3b82f6);
+  color: #ffffff;
+  font-size: 9px;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hotelx-col {
+  background: rgba(20, 216, 255, 0.05);
+}
+
+.check-icon,
+.cross-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  transition: 0.25s ease;
+}
+
+.check-icon {
+  color: #ffffff;
+  background: #16a34a;
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.2);
+}
+
+.cross-icon {
+  color: #ffffff;
+  background: #ef4444;
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.18);
+}
+
+.hotelx-col .check-icon {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: 0 10px 24px rgba(34, 197, 94, 0.26);
+}
+
+.compare-row:hover .check-icon,
+.compare-row:hover .cross-icon {
+  transform: scale(1.12);
+}
+
+@media (max-width: 900px) {
+  .compare-section {
+    padding: 62px 5%;
+  }
+
+  .compare-table-wrap {
+    padding-bottom: 14px;
+  }
+}

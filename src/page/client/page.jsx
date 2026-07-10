@@ -1,0 +1,51 @@
+import React from "react";
+import "./client.css";
+
+import hotel1 from "../../assets/hotel-1.png";
+import hotel2 from "../../assets/hotel-2.png";
+import hotel3 from "../../assets/hotel-3.png";
+import hotel4 from "../../assets/hotel-4.png";
+import hotel5 from "../../assets/hotel-3.png";
+import hotel6 from "../../assets/hotel-4.png";
+
+const LOGOS = [hotel1, hotel2, hotel3, hotel4, hotel5, hotel6];
+
+const REPEATS = 6;
+const HALF = Array.from({ length: REPEATS }, () => LOGOS).flat();
+const TRACK = [...HALF, ...HALF];
+
+export default function HotelClients() {
+  return (
+    <section className="hotel-clients-section" id="clients">
+      <div className="hotel-clients-header">
+        {/* <span className="hotel-clients-badge">
+          Trusted Hospitality
+        </span> */}
+
+        <h2>
+          Built for hotels that
+          <span> value excellence.</span>
+        </h2>
+
+        <p>
+          HotelX empowers hotels, resorts, and hospitality businesses with
+          one intelligent platform for reservations, operations, billing,
+          housekeeping, reporting, and guest management.
+        </p>
+      </div>
+
+      <div className="hotel-clients-marquee">
+        <div className="hotel-clients-track">
+          {TRACK.map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt="Hotel"
+              className="hotel-client-logo"
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

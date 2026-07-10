@@ -1,0 +1,229 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 120px 5% 55px;
+  overflow: hidden;
+  background: transparent;
+  font-family: "Manrope", sans-serif;
+}
+
+.hero-glow {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(80px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.hero-glow-one {
+  width: 420px;
+  height: 420px;
+  background: #14d8ff;
+  left: -160px;
+  top: 80px;
+}
+
+.hero-glow-two {
+  width: 460px;
+  height: 460px;
+  background: #7c3aed;
+  right: -160px;
+  bottom: 70px;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1540px;
+  min-height: calc(100vh - 175px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.hero-badge {
+  width: fit-content;
+  margin-bottom: 26px;
+  padding: 11px 17px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border-radius: 999px;
+  background: rgba(20, 216, 255, 0.14);
+  color: #155e75;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.hero-content h1 {
+    max-width: 780px;
+    margin: 0;
+    font-size: clamp(64px, 5.1vw, 96px);
+    line-height: 0.98;
+    letter-spacing: -5px;
+    font-weight: 900;
+    color: #111827;
+}
+.hero-content h1 span {
+    background: linear-gradient(135deg, #3c4446, #3b82f6, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-content p {
+    max-width: 700px;
+    margin: 32px 0 0;
+    font-size: 20px;
+    line-height: 1.55;
+    color: #4b5563;
+}
+
+.hero-actions {
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.primary-btn,
+.secondary-btn {
+  height: 62px;
+  padding: 0 28px;
+  border-radius: 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #14d8ff, #3b82f6);
+  color: #ffffff;
+  box-shadow: 0 18px 42px rgba(59, 130, 246, 0.3);
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.75);
+  color: #374151;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.hero-mini-stats {
+  margin-top: 42px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-mini-stats div {
+  min-width: 145px;
+  padding: 18px 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.07);
+}
+
+.hero-mini-stats strong {
+  display: block;
+  font-size: 28px;
+  color: #111827;
+}
+
+.hero-mini-stats span {
+  display: block;
+  margin-top: 4px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.image-card {
+  position: relative;
+  width: 100%;
+  max-width: 840px;
+  padding: 20px;
+  border-radius: 42px;
+  /* background: linear-gradient(
+    135deg,
+    rgba(20, 216, 255, 0.35),
+    rgba(124, 58, 237, 0.28)
+  );
+  box-shadow: 0 40px 100px rgba(15, 23, 42, 0.18); */
+}
+
+.image-card img {
+    width: 112%;
+    height: auto;
+    max-height: 610px;
+    object-fit: contain;
+    border-radius: 32px;
+    display: block;
+}
+
+.floating-card {
+  position: absolute;
+  padding: 18px 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 22px 55px rgba(15, 23, 42, 0.16);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.floating-card svg {
+  color: #2563eb;
+}
+
+.floating-card strong {
+  display: block;
+  color: #101827;
+  font-size: 16px;
+}
+
+.floating-card span {
+  display: block;
+  margin-top: 3px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.card-top {
+  top: 70px;
+  left: -70px;
+}
+
+.card-bottom {
+  right: -45px;
+  bottom: 58px;
+}
+
+@media (max-width: 1100px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 58px;
+    letter-spacing: -2px;
+  }
+
+  .card-top,
+  .card-bottom {
+    position: static;
+    margin-top: 16px;
+  }
+}

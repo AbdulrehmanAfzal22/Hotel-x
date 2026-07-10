@@ -1,0 +1,110 @@
+.counter-section {
+  width: 100%;
+  padding: 40px 5% 70px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(20, 216, 255, 0.16), transparent 24%),
+    radial-gradient(circle at 85% 80%, rgba(124, 58, 237, 0.12), transparent 28%),
+    linear-gradient(135deg, var(--page-bg-start) 0%, var(--page-bg-mid) 48%, var(--page-bg-end) 100%);
+  font-family: "Manrope", sans-serif;
+}
+
+.counter-strip {
+  max-width: 1180px;
+  min-height: 112px;
+  margin: 0 auto;
+  padding: 18px 24px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 22px 70px rgba(15, 23, 42, 0.08);
+}
+
+.counter-item {
+  min-width: 0;
+  padding: 0 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  border-right: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.counter-item:last-child {
+  border-right: none;
+}
+
+.counter-icon {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 16px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #14d8ff, #3b82f6);
+  box-shadow: 0 14px 32px rgba(59, 130, 246, 0.26);
+}
+
+.counter-content h3 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #111827;
+}
+
+.counter-content p {
+  margin: 6px 0 0;
+  font-size: 13.5px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .counter-strip {
+    border-radius: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 0;
+  }
+
+  .counter-item:nth-child(2) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .counter-section {
+    padding: 35px 5% 55px;
+  }
+
+  .counter-strip {
+    grid-template-columns: 1fr;
+    border-radius: 26px;
+    padding: 24px;
+  }
+
+  .counter-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    padding: 18px 0;
+  }
+
+  .counter-item:last-child {
+    border-bottom: none;
+  }
+}

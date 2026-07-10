@@ -1,0 +1,50 @@
+.marquee {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  overflow: hidden;
+  padding: 24px 0;
+  background: radial-gradient(circle at 15% 20%, rgba(20, 216, 255, 0.2), transparent 30%), radial-gradient(circle at 85% 70%, rgba(59, 130, 246, 0.15), transparent 32%), radial-gradient(circle at 80% 18%, rgba(124, 58, 237, 0.14), transparent 34%), linear-gradient(135deg, var(--page-bg-start) 0%, var(--page-bg-mid) 48%, var(--page-bg-end) 100%);
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+  width: max-content;
+  animation: marquee-scroll 45s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-track img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.85;
+  flex-shrink: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.marquee-track img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* moves exactly one copy of the track to the left, so the loop is seamless */
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
