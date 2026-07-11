@@ -15,7 +15,7 @@ const plans = [
     price: "$49",
     period: "/month",
     tag: "For small hotels",
-    desc: "Essential tools for smooth daily hotel operations.",
+    desc: "Core tools to keep daily hotel operations running smoothly.",
     features: [
       "Room booking management",
       "Guest records",
@@ -31,7 +31,7 @@ const plans = [
     price: "$99",
     period: "/month",
     tag: "Most Popular",
-    desc: "Advanced operations with AI, automation, and reporting.",
+    desc: "A smarter workflow with AI, automation, and clear reporting.",
     features: [
       "Everything in Starter",
       "AI dashboard assistant",
@@ -49,7 +49,7 @@ const plans = [
     price: "Custom",
     period: "",
     tag: "For hotel groups",
-    desc: "A complete system for multi-property hotel businesses.",
+    desc: "A custom solution for multi-property hotels and growing brands.",
     features: [
       "Everything in Professional",
       "Multi-hotel management",
@@ -83,8 +83,8 @@ export default function Pricing() {
           </h2>
 
           <p>
-            Choose a plan that matches your hotel size, team, and operational
-            goals.
+            Pick the right plan for your hotel, your team, and the guest
+            experience you want to deliver.
           </p>
         </motion.div>
 

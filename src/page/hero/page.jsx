@@ -18,28 +18,28 @@ const Hero = () => {
           transition={{ duration: 0.7 }}
         >
           <span className="hero-badge">
-            By #Hashverx
+            Crafted by Hashverx
           </span>
 
           <h1>
-            All needs
+            Everything your hotel needs
             <br />
-            <span>One platform</span>
+            <span>in one platform</span>
           </h1>
 
           <p>
-            From online booking to check-out, Hashverx brings hotelX for reservations,
-            housekeeping, guest communication, payments, and reporting into one
-            powerful system.
+            HotelX brings reservations, housekeeping, guest messaging, payments,
+            and real-time reporting into one polished system so your team can
+            deliver better stays with less effort.
           </p>
 
           <div className="hero-actions">
             <a href="#contact" className="primary-btn">
-              Start now <ArrowRight size={20} />
+              Book a demo <ArrowRight size={20} />
             </a>
 
             <a href="#features" className="secondary-btn">
-              Meet an advisor
+              See how it works
             </a>
           </div>
 

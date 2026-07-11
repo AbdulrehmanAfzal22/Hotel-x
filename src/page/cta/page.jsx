@@ -22,13 +22,13 @@ const CTA = () => {
           </span>
 
           <h2>
-            Manage your hotel smarter,
-            <span> faster, and beautifully.</span>
+            Run your hotel with confidence,
+            <span> clarity and speed.</span>
           </h2>
 
           <p>
-            Bookings, rooms, guests, billing, housekeeping, and reports — all
-            connected in one elegant system.
+            HotelX puts bookings, rooms, staff, billing, housekeeping, and
+            reporting into a single dashboard designed to make every shift easier.
           </p>
         </div>
 

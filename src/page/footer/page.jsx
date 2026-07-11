@@ -30,9 +30,8 @@ export default function Footer() {
             </a>
 
             <p>
-              Modern hotel management software designed to simplify bookings,
-              billing, housekeeping, reporting, AI automation, and guest
-              experiences.
+              A premium hotel management platform built to simplify bookings,
+              billing, housekeeping, reporting, AI automation, and guest care.
             </p>
 
             <div className="hotelx-footer-socials">
