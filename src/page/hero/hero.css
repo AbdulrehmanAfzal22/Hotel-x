@@ -58,25 +58,27 @@
 }
 
 .hero-content h1 {
-    max-width: 780px;
-    margin: 0;
-    font-size: clamp(64px, 5.1vw, 96px);
-    line-height: 0.98;
-    letter-spacing: -5px;
-    font-weight: 900;
-    color: #111827;
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(40px, 5.1vw, 96px);
+  line-height: 1.02;
+  letter-spacing: -3px;
+  font-weight: 900;
+  color: #111827;
 }
+
 .hero-content h1 span {
-    background: linear-gradient(135deg, #3c4446, #3b82f6, #7c3aed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, #3c4446, #3b82f6, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .hero-content p {
-    max-width: 700px;
-    margin: 32px 0 0;
-    font-size: 20px;
-    line-height: 1.55;
-    color: #4b5563;
+  max-width: 700px;
+  margin: 32px 0 0;
+  font-size: clamp(15px, 1.6vw, 20px);
+  line-height: 1.55;
+  color: #4b5563;
 }
 
 .hero-actions {
@@ -84,20 +86,22 @@
   display: flex;
   align-items: center;
   gap: 18px;
+  flex-wrap: wrap;
 }
 
 .primary-btn,
 .secondary-btn {
-  height: 62px;
-  padding: 0 28px;
+  height: 58px;
+  padding: 0 24px;
   border-radius: 17px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: clamp(15px, 1.4vw, 18px);
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .primary-btn {
@@ -145,6 +149,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .image-card {
@@ -153,21 +158,16 @@
   max-width: 840px;
   padding: 20px;
   border-radius: 42px;
-  /* background: linear-gradient(
-    135deg,
-    rgba(20, 216, 255, 0.35),
-    rgba(124, 58, 237, 0.28)
-  );
-  box-shadow: 0 40px 100px rgba(15, 23, 42, 0.18); */
 }
 
 .image-card img {
-    width: 112%;
-    height: auto;
-    max-height: 610px;
-    object-fit: contain;
-    border-radius: 32px;
-    display: block;
+  width: 100%;
+  height: auto;
+  max-height: 610px;
+  object-fit: contain;
+  border-radius: 32px;
+  display: block;
+  margin: 0 auto;
 }
 
 .floating-card {
@@ -210,20 +210,121 @@
   bottom: 58px;
 }
 
+/* ---------- Large tablets / small laptops ---------- */
+@media (max-width: 1300px) {
+  .hero-container {
+    gap: 45px;
+  }
+
+  .image-card img {
+    width: 100%;
+  }
+}
+
+/* ---------- Tablets ---------- */
 @media (max-width: 1100px) {
+  .hero-section {
+    padding: 100px 5% 50px;
+  }
+
   .hero-container {
     grid-template-columns: 1fr;
     gap: 50px;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .hero-badge {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-content h1 {
-    font-size: 58px;
+    max-width: 100%;
     letter-spacing: -2px;
+    margin: 0 auto;
+  }
+
+  .hero-content p {
+    margin: 32px auto 0;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-mini-stats {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    order: -1;
   }
 
   .card-top,
   .card-bottom {
     position: static;
     margin-top: 16px;
+  }
+}
+
+/* ---------- Small tablets / large phones ---------- */
+@media (max-width: 640px) {
+  .hero-section {
+    padding: 90px 6% 40px;
+  }
+
+  .hero-container {
+    gap: 36px;
+  }
+
+  .hero-content h1 {
+    letter-spacing: -1px;
+    line-height: 1.05;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    height: 54px;
+  }
+
+  .hero-mini-stats div {
+    flex: 1 1 calc(50% - 16px);
+    min-width: 120px;
+  }
+
+  .image-card {
+    padding: 12px;
+  }
+}
+
+/* ---------- Small phones ---------- */
+@media (max-width: 400px) {
+  .hero-section {
+    padding: 80px 5% 32px;
+  }
+
+  .hero-badge {
+    font-size: 13px;
+    padding: 9px 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-mini-stats div {
+    flex: 1 1 100%;
   }
 }

@@ -12,6 +12,7 @@
 .hotel-clients-header {
     max-width: 820px;
     margin: 0 auto 55px;
+    padding: 0 5%;
     text-align: center;
 }
 
@@ -38,9 +39,9 @@
 .hotel-clients-header h2 {
     margin: 18px 0 18px;
 
-    font-size: clamp(40px, 4vw, 62px);
+    font-size: clamp(30px, 4vw, 62px);
 
-    line-height: 1;
+    line-height: 1.05;
 
     letter-spacing: -2px;
 
@@ -69,7 +70,7 @@
 
     color: #64748b;
 
-    font-size: 18px;
+    font-size: clamp(14.5px, 1.8vw, 18px);
 
     line-height: 1.75;
 }
@@ -174,6 +175,23 @@
     }
 }
 
+/* Small laptops / large tablets */
+@media (max-width: 1100px) {
+
+    .hotel-clients-header {
+        margin-bottom: 46px;
+    }
+
+    .hotel-client-logo {
+        height: 68px;
+    }
+
+    .hotel-clients-track {
+        gap: 65px;
+    }
+}
+
+/* Tablets */
 @media (max-width:900px) {
 
     .hotel-clients-section {
@@ -199,5 +217,74 @@
     .hotel-clients-header p {
 
         font-size: 16px;
+    }
+
+    .hotel-clients-marquee::before,
+    .hotel-clients-marquee::after {
+        width: 100px;
+    }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 640px) {
+
+    .hotel-clients-section {
+        padding: 60px 0;
+    }
+
+    .hotel-clients-header {
+        margin-bottom: 36px;
+    }
+
+    .hotel-client-logo {
+        height: 48px;
+    }
+
+    .hotel-clients-track {
+        gap: 42px;
+        animation-duration: 32s;
+    }
+
+    .hotel-clients-marquee::before,
+    .hotel-clients-marquee::after {
+        width: 70px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+
+    .hotel-clients-section {
+        padding: 50px 0;
+    }
+
+    .hotel-clients-header h2 {
+        letter-spacing: -0.5px;
+    }
+
+    .hotel-client-logo {
+        height: 38px;
+    }
+
+    .hotel-clients-track {
+        gap: 30px;
+        animation-duration: 26s;
+    }
+
+    .hotel-clients-marquee::before,
+    .hotel-clients-marquee::after {
+        width: 50px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 360px) {
+
+    .hotel-client-logo {
+        height: 32px;
+    }
+
+    .hotel-clients-track {
+        gap: 24px;
     }
 }

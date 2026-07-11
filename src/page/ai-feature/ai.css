@@ -56,8 +56,8 @@
 
 .ai-header h2 {
   margin: 0;
-  font-size: clamp(38px, 4.2vw, 66px);
-  line-height: 1;
+  font-size: clamp(32px, 4.2vw, 66px);
+  line-height: 1.05;
   letter-spacing: -2.5px;
   font-weight: 900;
   color: #111827;
@@ -73,7 +73,7 @@
 .ai-header p {
   max-width: 700px;
   margin: 18px auto 0;
-  font-size: 17px;
+  font-size: clamp(14.5px, 1.6vw, 17px);
   line-height: 1.6;
   color: #64748b;
 }
@@ -241,13 +241,47 @@
   color: #38bdf8;
 }
 
-@media (max-width: 1300px) {
+/* Large laptops */
+@media (max-width: 1560px) {
   .ai-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 850px) {
+/* Small laptops / large tablets */
+@media (max-width: 1300px) {
+  .ai-section {
+    padding: 80px 5%;
+  }
+
+  .ai-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .ai-card {
+    min-height: 340px;
+    padding: 22px;
+  }
+
+  .ai-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+  }
+
+  .ai-card h3 {
+    font-size: 22px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .ai-header {
+    margin-bottom: 44px;
+  }
+
   .ai-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -257,16 +291,97 @@
   }
 }
 
-@media (max-width: 580px) {
+/* Small tablets */
+@media (max-width: 680px) {
   .ai-section {
     padding: 70px 5%;
+  }
+
+  .ai-header {
+    margin-bottom: 36px;
+  }
+
+  .ai-header h2 {
+    letter-spacing: -1.5px;
+  }
+
+  .ai-grid {
+    gap: 14px;
+  }
+
+  .ai-card {
+    min-height: 300px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .ai-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+  }
+
+  .ai-card h3 {
+    font-size: 20px;
+  }
+
+  .ai-card p {
+    font-size: 13.5px;
+  }
+
+  .command-box {
+    padding: 13px 14px;
+    margin-top: 18px;
+  }
+
+  .command-box code {
+    font-size: 12px;
+  }
+}
+
+/* Phones */
+@media (max-width: 560px) {
+  .ai-section {
+    padding: 60px 5%;
   }
 
   .ai-grid {
     grid-template-columns: 1fr;
   }
 
-  .ai-header h2 {
-    letter-spacing: -1.5px;
+  .ai-card {
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .ai-card h3::before {
+    margin-bottom: 8px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  .ai-header p {
+    font-size: 14px;
+  }
+
+  .ai-card {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .ai-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .ai-card h3 {
+    font-size: 19px;
+    letter-spacing: -0.5px;
+  }
+
+  .command-box code {
+    font-size: 11.5px;
   }
 }

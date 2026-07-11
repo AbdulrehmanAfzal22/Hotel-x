@@ -17,21 +17,23 @@ import Footer from './page/footer/page.jsx';
 function App() {
   return (
   <>
-  <Navbar/>
+  {/* */}
+  <Navbar/> 
   <Hero/>
   <Marquee/>
   <Counters/>
-  <CTA/>
   <AiFeatures/>
-  <HotelModules/>
-<HotelClients/>
-  <Testimonials/>
+  <CTA/>
+   <HotelModules/>
+   <HotelClients/>
+     <Testimonials/>
   <CTATwo/>
   <CompetitorTable/>
   <Pricing/>
   <FAQ/>
   <Contact/>
-  <Footer/>
+<Footer/> 
+  
   </>
   );
 

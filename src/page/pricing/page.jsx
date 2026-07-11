@@ -76,7 +76,6 @@ export default function Pricing() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <span>Pricing</span>
 
           <h2>
             Flexible plans for

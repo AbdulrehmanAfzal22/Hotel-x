@@ -43,6 +43,50 @@
   }
 }
 
+/* Tablet */
+@media (max-width: 900px) {
+  .marquee {
+    padding: 20px 0;
+  }
+
+  .marquee-track {
+    gap: 52px;
+    animation-duration: 35s;
+  }
+
+  .marquee-track img {
+    height: 52px;
+  }
+}
+
+/* Large phones */
+@media (max-width: 600px) {
+  .marquee {
+    padding: 16px 0;
+  }
+
+  .marquee-track {
+    gap: 40px;
+    animation-duration: 28s;
+  }
+
+  .marquee-track img {
+    height: 42px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  .marquee-track {
+    gap: 28px;
+    animation-duration: 22s;
+  }
+
+  .marquee-track img {
+    height: 34px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
     animation: none;

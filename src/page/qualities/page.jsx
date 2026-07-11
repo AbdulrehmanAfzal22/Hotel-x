@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight,
@@ -120,6 +120,20 @@ const modules = [
 
 const HotelModules = () => {
   const [active, setActive] = useState(0);
+  const previewRef = useRef(null);
+
+  const handleSelect = (index) => {
+    setActive(index);
+
+    // Only relevant on stacked (mobile/tablet) layouts where the sidebar
+    // sits above the preview — smoothly scroll the preview into view.
+    if (window.innerWidth <= 1100 && previewRef.current) {
+      previewRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   return (
     <section className="hotel-modules" id="features">
@@ -151,7 +165,7 @@ const HotelModules = () => {
                   key={item.title}
                   type="button"
                   className={`module-link ${active === index ? "active" : ""}`}
-                  onClick={() => setActive(index)}
+                  onClick={() => handleSelect(index)}
                 >
                   <span className="module-icon">
                     <Icon size={19} />
@@ -165,7 +179,7 @@ const HotelModules = () => {
             })}
           </aside>
 
-          <div className="modules-preview">
+          <div className="modules-preview" ref={previewRef}>
             <AnimatePresence mode="wait">
               <motion.div
                 key={modules[active].title}
