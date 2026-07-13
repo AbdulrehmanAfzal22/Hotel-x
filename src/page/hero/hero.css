@@ -328,3 +328,38 @@
     flex: 1 1 100%;
   }
 }
+/* ---------- Small phones ---------- */
+@media (max-width: 400px) {
+  .hero-section {
+    padding: 80px 5% 32px;
+  }
+
+  .hero-badge {
+    font-size: 13px;
+    padding: 9px 14px;
+  }
+
+  .hero-content h1 {
+    letter-spacing: -1px;
+    line-height: 1.15;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-mini-stats div {
+    flex: 1 1 100%;
+  }
+}
+.hero-content h1 {
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(32px, 6vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -3px;
+  font-weight: 900;
+  color: #111827;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
