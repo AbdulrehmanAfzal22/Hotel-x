@@ -5,29 +5,34 @@ import "./faq.css";
 
 const faqs = [
   {
-    question: "Can HotelX manage multiple hotels or branches?",
+    question:
+      "Can cafe purchases and car rental charges be added automatically to a guest's final hotel bill?",
     answer:
-      "Yes. HotelX supports single-property and multi-property management, allowing you to manage rooms, bookings, staff, reports, and operations for multiple hotels from one centralized dashboard.",
+      "Yes. Our unified architecture automatically routes dining tabs, spa sessions, and car rental expenditures directly to the guest's active digital hotel folio, simplifying checkout down to a single card swipe.",
   },
   {
-    question: "Does HotelX support online reservations and room bookings?",
+    question:
+      "How does the system sync operations and profiles across multiple hotel branches?",
     answer:
-      "Absolutely. Guests can book rooms online while your staff can also create walk-in reservations. The system updates room availability in real time to prevent double bookings.",
+      "The platform houses a centralized database matrix. This lets hotel groups share guest histories and loyalty data across branches while keeping individual branch inventories, accounting files, and tax reporting structures completely distinct.",
   },
   {
-    question: "Can I manage billing, invoices, and payments in one place?",
+    question:
+      "Can my housekeeping and maintenance crews update room statuses from their mobile phones?",
     answer:
-      "Yes. HotelX generates invoices, records guest payments, manages outstanding balances, and provides detailed financial reports directly from the system.",
+      "Absolutely. The platform features a responsive, mobile-optimized interface for floor staff. Cleaners can mark a room as \"Cleaned\" or report a maintenance issue, which triggers a live notification at the reception desk instantly.",
   },
   {
-    question: "Is HotelX secure and does it support user permissions?",
+    question:
+      "How long does it take to train front office personnel on this hospitality software?",
     answer:
-      "Yes. HotelX includes role-based access control, secure authentication, audit logs, and customizable permissions so every employee only accesses the features relevant to their role.",
+      "Because the user interface was designed with modern user experience principles, new staff members can master core front-desk workflows—such as reservation adjustments, guest search, and invoice splitting—in less than two hours.",
   },
   {
-    question: "Can HotelX generate reports and business analytics?",
+    question:
+      "Does the food inventory module alert our kitchen manager when stock runs low?",
     answer:
-      "Yes. HotelX provides occupancy reports, revenue analysis, booking statistics, guest history, maintenance reports, and customizable dashboards to help you make informed business decisions.",
+      "Yes. You can define custom minimum stock alert thresholds for critical kitchen and cafe ingredients. When stock dips below these parameters, the system triggers automated reorder notifications to prevent service delays.",
   },
 ];
 

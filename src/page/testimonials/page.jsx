@@ -6,7 +6,9 @@ import "./testimonials.css";
 const testimonials = [
   {
     quote:
-      "HotelX gave our team one clean dashboard for bookings, rooms, billing, and reports. Daily operations became faster and easier to control.",
+
+      "Before this system, our front desk, cafe, and housekeeping teams were on completely separate applications. Unifying everything into one dashboard completely eliminated walk-in room assignment errors .",
+
     highlight: "Daily operations became faster",
     name: "Ammar Khan",
     role: "Hotel Owner",

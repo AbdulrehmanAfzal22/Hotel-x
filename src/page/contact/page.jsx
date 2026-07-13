@@ -76,8 +76,8 @@ export default function Contact() {
           <span>Contact Sales</span>
 
           <h2>
-            Let’s modernize your
-            <strong> hotel operations.</strong>
+            Request a Personalized Hotel 
+            <strong>Audit & System Architecture Setup</strong>
           </h2>
 
           <p>
@@ -131,7 +131,7 @@ export default function Contact() {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Enter your name"
+                  placeholder="Full Name"
                   required
                   disabled={isLocked}
                 />
@@ -145,7 +145,7 @@ export default function Contact() {
                 <input
                   type="text"
                   name="hotel_name"
-                  placeholder="Hotel / company name"
+                  placeholder="Hotel Name"
                   required
                   disabled={isLocked}
                 />
@@ -160,7 +160,7 @@ export default function Contact() {
               <input
                 type="email"
                 name="email"
-                placeholder="you@example.com"
+                placeholder="Professional Email Address"
                 required
                 disabled={isLocked}
               />
@@ -173,7 +173,7 @@ export default function Contact() {
               <MessageSquare size={18} />
               <textarea
                 name="message"
-                placeholder="Tell us what you need..."
+                placeholder="Total Room Count / Number of Branches (Dropdown)"
                 rows="5"
                 required
                 disabled={isLocked}

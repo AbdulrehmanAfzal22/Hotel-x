@@ -23,14 +23,15 @@ export default function HotelClients() {
         </span> */}
 
         <h2>
-          Built for hotels that
-          <span> value excellence.</span>
+           Trusted by Boutique Hotels, 
+
+
+          <span>Luxury Resorts, and Global Hospitality Chains</span>
         </h2>
 
         <p>
-          HotelX empowers hotels, resorts, and hospitality businesses with
-          one intelligent platform for reservations, operations, billing,
-          housekeeping, reporting, and guest management.
+         Placeholder row for your actual independent hotel, hospitality group, and
+resort partner logos
         </p>
       </div>
 

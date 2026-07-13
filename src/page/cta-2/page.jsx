@@ -19,8 +19,8 @@ export default function CTATwo() {
           <span className="cta-two-badge">HotelX Management Platform</span>
 
           <h2>
-            Ready to simplify
-            <span> your hotel operations?</span>
+           Ready to replace 
+            <span> your fragmented hotel tools with a high-performance system?</span>
           </h2>
 
           <p>
@@ -52,7 +52,7 @@ export default function CTATwo() {
 
           <a href="#contact" className="cta-two-secondary">
             <MessageCircle size={18} />
-            Talk to sales
+            Consult with a Hospitality Solutions Architect
           </a>
 
           {/* <div className="cta-two-note">

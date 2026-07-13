@@ -34,7 +34,7 @@ const modules = [
     icon: LayoutDashboard,
     image: dashboardImg,
     heading: "Unified Dashboard",
-    desc: "Monitor bookings, occupancy, revenue, room availability, and daily hotel performance from one centralized dashboard."
+ desc: "No more isolated restaurant data. Post room charges directly from your cafe or bar point-of-sale straight to the guest's master invoice instantly."
   },
 
   {
@@ -42,7 +42,9 @@ const modules = [
     icon: CalendarCheck,
     image: bookingImg,
     heading: "Room Booking",
-    desc: "Create bookings, manage check-ins, check-outs, invoices, guest stays, and reservations in just a few clicks."
+    desc: "Handle guest arrivals, room assignments, keys, and sudden split-billing upgrades in seconds through an intuitive, visual drag-and-drop room matrix."
+   
+
   },
 
   {
@@ -50,7 +52,9 @@ const modules = [
     icon: Wrench,
     image: reservationImg,
     heading: "Room Maintenance",
-    desc: "Track maintenance requests, assign engineers, and ensure every room stays guest-ready."
+    desc: "Empower your cleaning and maintenance crews with mobile alerts. The moment a room is marked clean, the front desk is instantly cleared to check in the next arrival."
+
+
   },
 
   {
@@ -74,7 +78,7 @@ const modules = [
     icon: Settings2,
     image: roomsImg,
     heading: "Permission Configuration",
-    desc: "Assign permissions for departments, employees, and operational workflows with complete flexibility."
+    desc: "Manage multiple hotels effortlessly. Switch between different hotel branches seamlessly to audit cross-branch revenue, share guest data profiles, and centralize master configurations."
   },
 
   {
@@ -98,7 +102,8 @@ const modules = [
     icon: Store,
     image: vendorImg,
     heading: "Vendor Management",
-    desc: "Maintain supplier records, purchase contacts, payment information, and procurement history."
+    desc: " Upsell high-margin add-ons natively. Track vehicle availability, driver dispatches, fuel logs, and client billing directly inside your master calendar."
+
   },
 
   {
@@ -145,8 +150,8 @@ const HotelModules = () => {
           <span>HotelX Modules</span>
 
           <h2>
-            One system for every
-            <strong> hotel operation.</strong>
+            Unify Your Entire Hospitality 
+            <strong> Ecosystem in One Dashboard</strong>
           </h2>
 
           <p>

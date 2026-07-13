@@ -55,12 +55,12 @@
 }
 
 .ai-header h2 {
-  margin: 0;
-  font-size: clamp(32px, 4.2vw, 66px);
-  line-height: 1.05;
-  letter-spacing: -2.5px;
-  font-weight: 900;
-  color: #111827;
+    margin: 0;
+    font-size: 41px;
+    line-height: 1.05;
+    letter-spacing: -2.5px;
+    font-weight: 900;
+    color: #111827;
 }
 
 .ai-header h2 strong {
@@ -90,6 +90,8 @@
   padding: 24px;
   border-radius: 28px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.78)),
     radial-gradient(circle at 85% 10%, rgba(20, 216, 255, 0.14), transparent 34%);
@@ -195,8 +197,8 @@
 .command-box {
   position: relative;
   z-index: 2;
-  margin-top: 22px;
-  padding: 15px 16px;
+  margin-top: auto;
+  padding: 22px 16px 15px;
   border-radius: 18px;
   background:
     linear-gradient(180deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.98));
@@ -331,8 +333,8 @@
   }
 
   .command-box {
-    padding: 13px 14px;
-    margin-top: 18px;
+    padding: 18px 14px 13px;
+    margin-top: auto;
   }
 
   .command-box code {

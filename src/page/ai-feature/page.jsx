@@ -11,26 +11,29 @@ import "./ai.css";
 const aiFeatures = [
   {
     icon: ReceiptText,
-    title: "AI Commission Report",
-    desc: "Automatically calculate client, agent, or partner commissions from bookings and payments.",
-    command: "Show commission report for all clients this month.",
+    title: "Instant RevPAR Optimization",
+    desc: " Maximize room occupancy and RevPAR instantly. Our intelligent engine adjusts room rates in real time based on local market demand, seasonal shifts, and competitor data across every hotel location. ",
+ command: "    Boost occupancy & RevPAR with AI real-time pricing.",
   },
   {
     icon: TrendingUp,
-    title: "AI Revenue Forecasting",
-    desc: "Predict upcoming revenue, occupancy trends, and expected booking performance.",
-    command: "Forecast next month revenue and occupancy.",
+    title: "AI-Powered Stock Forecasting:",
+    desc: "Let AI analyze active room occupancy levels and past dining habits to forecast exactly how much stock your cafe and restaurant kitchens need to order,cutting food waste up to 20%.",
+    command: "Generate Smart Inventory Plan",
   },
   {
     icon: Users,
-    title: "AI Guest Insights",
-    desc: "Analyze guest history, preferences, repeat visits, and spending behavior.",
-    command: "Show top returning guests and their preferences.",
+    title: "AI Insights to lower climate control and lighting costs.",
+    desc: "The platform interfaces with smart utility grids. The moment a guest checks out via their mobile portal, the system automatically triggers Eco-Mode to lower climate control and lighting costs.",
+
+    command: "Activate Eco Mode",
   },
   {
     icon: CalendarSearch,
     title: "AI Booking Analysis",
-    desc: "Find booking patterns, cancellation risks, peak dates, and slow periods.",
+    desc: "Handle up to 75% of routine guest requests—like room service orders, Wi-Fi passwords, and late checkout inquiries—instantly in multiple languages without bothering your front desk.",
+
+
     command: "Analyze booking trends for the last 30 days.",
   },
   {
@@ -57,8 +60,8 @@ const AiFeatures = () => {
         >
           {/* <span>AI Features</span> */}
           <h2>
-            Ask your hotel system.
-            <strong> Get instant answers.</strong>
+            ASmart Hospitality: AI-Driven 
+            <strong>Hotel Operations</strong>
           </h2>
           <p>
             HotelX AI helps managers understand bookings, guests, revenue,

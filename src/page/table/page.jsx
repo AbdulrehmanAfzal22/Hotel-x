@@ -5,19 +5,19 @@ const companies = ["HotelX", "Cloudbeds", "Mews", "Hotelogix", "eZee"];
 
 const rows = [
   {
-    feature: "AI Hotel Assistant",
+    feature: "Native Multi-Branch Control",
     values: [true, false, false, false, false],
   },
   {
-    feature: "AI Reports",
+    feature: "Integrated Cafe & POS Billing",
     values: [true, true, false, true, false],
   },
   {
-    feature: "Revenue Forecasting",
+    feature: "Car Rental & Amenity Sync",
     values: [true, true, true, false, false],
   },
   {
-    feature: "Commission Reports",
+    feature: "Live Housekeeping Mobile App",
     values: [true, false, false, false, true],
   },
   {

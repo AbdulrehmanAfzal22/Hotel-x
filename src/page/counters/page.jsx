@@ -11,28 +11,27 @@ import "./counter.css";
 const stats = [
   {
     icon: Building2,
-    value: 500,
-    suffix: "+",
-    label: "Hotels Managed",
+    value: 85,
+    suffix: "%",
+    label: "Front Desk Efficiency",
   },
   {
     icon: BadgeCheck,
-    value: 73,
+    value: 18,
     suffix: "%",
-    label: "Client Satisfaction",
+    label: "Revenue Growth",
   },
   {
     icon: Globe2,
-    value: 25,
-    suffix: "+",
-    label: "Booking Channels",
+    value: 20,
+    suffix: "%",
+    label: "Kitchen Waste Reduction",
   },
   {
     icon: ShieldCheck,
-    value: 99.9,
+    value: 100,
     suffix: "%",
-    label: "System Uptime",
-    decimals: 1,
+    label: "Centralized Hotel Operations",
   },
 ];
 

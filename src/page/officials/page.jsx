@@ -17,12 +17,23 @@ const TRACK = [...HALF, ...HALF]; // two equal halves keeps translateX(-50%) sea
 
 export default function Marquee() {
   return (
-    <div className="marquee">
-      <div className="marquee-track">
-        {TRACK.map((src, i) => (
-          <img src={src} alt="" key={i} />
-        ))}
+    <section className="marquee-section">
+      <div className="marquee-heading">
+        <h2>Enterprise-Grade Hospitality <span className="marquee-design">Compliance and Security</span> </h2>
+        <p>
+        Our platform integrates perfectly with global travel networks, local tourism
+boards, and strict data security protocols to protect guest profiles and transaction
+integrity across every hotel branch.
+        </p>
       </div>
-    </div>
+
+      <div className="marquee">
+        <div className="marquee-track">
+          {TRACK.map((src, i) => (
+            <img src={src} alt="" key={i} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

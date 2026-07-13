@@ -22,24 +22,24 @@ const Hero = () => {
           </span>
 
           <h1>
-            Everything your hotel needs
+            The Enterprise Hotel OS: Connect Reception,
             <br />
-            <span>in one platform</span>
+            <span>Inventory, and Multi-Branch Hospitality Networks</span>
           </h1>
 
           <p>
-            HotelX brings reservations, housekeeping, guest messaging, payments,
-            and real-time reporting into one polished system so your team can
-            deliver better stays with less effort.
+          Stop losing margins to disconnected hotel software. A single, unified
+cloud platform built to seamlessly synchronize automated check-ins, staff workflows,
+food inventory, cafe POS, and car rentals across all your hotel branches.
           </p>
 
           <div className="hero-actions">
             <a href="#contact" className="primary-btn">
-              Book a demo <ArrowRight size={20} />
+              Schedule a Live Hotel Demo <ArrowRight size={20} />
             </a>
 
             <a href="#features" className="secondary-btn">
-              See how it works
+              View System Architecture
             </a>
           </div>
 

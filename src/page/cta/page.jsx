@@ -22,8 +22,9 @@ const CTA = () => {
           </span>
 
           <h2>
-            Run your hotel with confidence,
-            <span> clarity and speed.</span>
+           Curated for boutique hotels, luxury resorts, and expanding hospitality chains.
+
+            <span>Want to calculate your operational ROI?</span>
           </h2>
 
           <p>
@@ -38,7 +39,7 @@ const CTA = () => {
           </a>
 
           <a href="#features" className="cta-secondary">
-            Explore system
+           Take a 5-Minute Virtual Hotel Tour
           </a>
         </div>
       </motion.div>
