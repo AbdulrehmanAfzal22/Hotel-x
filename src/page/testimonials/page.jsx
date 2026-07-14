@@ -47,40 +47,69 @@ export default function Testimonials() {
 
   return (
     <section className="hotelx-testimonials" id="testimonials">
-      <button className="hotelx-testimonial-arrow left" onClick={prev}>
-        <ChevronLeft size={26} />
-      </button>
+      <div className="hotelx-testimonials-header">
+        <span className="hotelx-testimonials-badge">Testimonials</span>
 
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={active}
-          className="hotelx-testimonial-card"
-          initial={{ opacity: 0, y: 22, scale: 0.98 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: -18, scale: 0.98 }}
-          transition={{ duration: 0.45, ease: "easeOut" }}
-        >
-          <p className="hotelx-testimonial-quote">
-            “{parts[0]}
-            <strong>{item.highlight}</strong>
-            {parts[1]}”
-          </p>
+        <h2>
+          Loved by hotel teams,
+          <span> trusted by hospitality brands.</span>
+        </h2>
 
-          <div className="hotelx-testimonial-user">
-            <div className="hotelx-testimonial-avatar">{item.initials}</div>
+        <p>
+          Hear how hotels and resorts use HotelX to simplify daily operations
+          and deliver a better guest experience.
+        </p>
+      </div>
 
-            <div>
-              <h4>{item.name}</h4>
-              <span>{item.role}</span>
-              <p>{item.company}</p>
+      <div className="hotelx-testimonials-body">
+        <button className="hotelx-testimonial-arrow left" onClick={prev}>
+          <ChevronLeft size={26} />
+        </button>
+
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={active}
+            className="hotelx-testimonial-card"
+            initial={{ opacity: 0, y: 22, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -18, scale: 0.98 }}
+            transition={{ duration: 0.45, ease: "easeOut" }}
+          >
+            <p className="hotelx-testimonial-quote">
+              “{parts[0]}
+              <strong>{item.highlight}</strong>
+              {parts[1]}”
+            </p>
+
+            <div className="hotelx-testimonial-user">
+              <div className="hotelx-testimonial-avatar">{item.initials}</div>
+
+              <div>
+                <h4>{item.name}</h4>
+                <span>{item.role}</span>
+                <p>{item.company}</p>
+              </div>
             </div>
-          </div>
-        </motion.div>
-      </AnimatePresence>
+          </motion.div>
+        </AnimatePresence>
 
-      <button className="hotelx-testimonial-arrow right" onClick={next}>
-        <ChevronRight size={26} />
-      </button>
+        <button className="hotelx-testimonial-arrow right" onClick={next}>
+          <ChevronRight size={26} />
+        </button>
+      </div>
+
+      <div className="hotelx-testimonial-dots">
+        {testimonials.map((_, index) => (
+          <button
+            key={index}
+            className={`hotelx-testimonial-dot ${
+              active === index ? "active" : ""
+            }`}
+            onClick={() => setActive(index)}
+            aria-label={`Go to testimonial ${index + 1}`}
+          />
+        ))}
+      </div>
     </section>
   );
 }

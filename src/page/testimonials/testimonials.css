@@ -1,10 +1,6 @@
 .hotelx-testimonials {
   position: relative;
-  padding: 75px 5%;
-  min-height: 460px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 90px 5% 75px;
   overflow: hidden;
 
   background: transparent;
@@ -12,10 +8,69 @@
   font-family: "Manrope", sans-serif;
 }
 
+.hotelx-testimonials-header {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.hotelx-testimonials-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+
+  padding: 8px 16px;
+  border-radius: 999px;
+
+  background: rgba(20, 216, 255, 0.12);
+  color: #155e75;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.hotelx-testimonials-header h2 {
+  margin: 0;
+  font-size: clamp(28px, 3.4vw, 41px);
+  line-height: 1.15;
+  letter-spacing: -1.6px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.hotelx-testimonials-header h2 span {
+  background: linear-gradient(135deg, #14d8ff, #3b82f6, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hotelx-testimonials-header p {
+  max-width: 620px;
+  margin: 16px auto 0;
+  color: #64748b;
+  font-size: clamp(14.5px, 1.6vw, 17px);
+  line-height: 1.65;
+}
+
+.hotelx-testimonials-body {
+  position: relative;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hotelx-testimonial-card {
   width: min(100%, 980px);
+  min-height: 320px;
   padding: 46px 64px;
   border-radius: 34px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   background: rgba(255, 255, 255, 0.84);
   backdrop-filter: blur(24px);
@@ -31,15 +86,15 @@
 .hotelx-testimonial-quote {
   max-width: 820px;
   margin: 0 auto;
-  font-size: clamp(24px, 2.5vw, 36px);
+  font-size: clamp(19px, 2.1vw, 27px);
   line-height: 1.55;
-  letter-spacing: -1.2px;
-  font-weight: 600;
-  color: #111827;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  color: #334155;
 }
 
 .hotelx-testimonial-quote strong {
-  font-weight: 900;
+  font-weight: 800;
   background: linear-gradient(135deg, #14d8ff, #3b82f6, #7c3aed);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -126,13 +181,51 @@
 .hotelx-testimonial-arrow.right {
     right: 7%;
 }
+
+.hotelx-testimonial-dots {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hotelx-testimonial-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+
+  background: rgba(15, 23, 42, 0.16);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.hotelx-testimonial-dot:hover {
+  background: rgba(59, 130, 246, 0.45);
+}
+
+.hotelx-testimonial-dot.active {
+  width: 28px;
+  background: linear-gradient(135deg, #14d8ff, #3b82f6);
+}
+
 @media (max-width: 900px) {
   .hotelx-testimonials {
-    padding: 65px 5%;
+    padding: 70px 5% 65px;
+  }
+
+  .hotelx-testimonials-header {
+    margin-bottom: 40px;
+  }
+
+  .hotelx-testimonials-body {
     min-height: auto;
   }
 
   .hotelx-testimonial-card {
+    min-height: 360px;
     padding: 38px 28px;
     border-radius: 28px;
   }
@@ -148,5 +241,30 @@
 
   .hotelx-testimonial-arrow.right {
     right: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hotelx-testimonial-card {
+    min-height: 400px;
+    padding: 34px 20px;
+  }
+
+  .hotelx-testimonial-quote {
+    font-size: 17px;
+    letter-spacing: -0.3px;
+  }
+
+  .hotelx-testimonial-arrow {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hotelx-testimonial-arrow.left {
+    left: 6px;
+  }
+
+  .hotelx-testimonial-arrow.right {
+    right: 6px;
   }
 }

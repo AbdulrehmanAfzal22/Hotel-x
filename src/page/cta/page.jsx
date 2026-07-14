@@ -39,7 +39,7 @@ const CTA = () => {
           </a>
 
           <a href="#features" className="cta-secondary">
-           Take a 5-Minute Virtual Hotel Tour
+           Virtual Hotel Tour
           </a>
         </div>
       </motion.div>

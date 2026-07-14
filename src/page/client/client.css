@@ -39,7 +39,7 @@
 .hotel-clients-header h2 {
     margin: 18px 0 18px;
 
-    font-size: clamp(30px, 4vw, 62px);
+    font-size: 41px;
 
     line-height: 1.05;
 
@@ -110,9 +110,7 @@
 
     object-fit: contain;
 
-    opacity: .75;
-
-    filter: grayscale(100%);
+    opacity: 1;
 
     transition: .35s ease;
 
@@ -122,8 +120,6 @@
 .hotel-client-logo:hover {
 
     opacity: 1;
-
-    filter: grayscale(0);
 
     transform: scale(1.08);
 }

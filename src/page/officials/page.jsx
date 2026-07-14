@@ -19,7 +19,7 @@ export default function Marquee() {
   return (
     <section className="marquee-section">
       <div className="marquee-heading">
-        <h2>Enterprise-Grade Hospitality <span className="marquee-design">Compliance and Security</span> </h2>
+        <h2>Enterprise Grade Hospitality <span className="marquee-design">Compliance and Security</span> </h2>
         <p>
         Our platform integrates perfectly with global travel networks, local tourism
 boards, and strict data security protocols to protect guest profiles and transaction

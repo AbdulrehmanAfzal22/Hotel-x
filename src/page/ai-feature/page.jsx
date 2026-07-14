@@ -36,12 +36,13 @@ const aiFeatures = [
 
     command: "Analyze booking trends for the last 30 days.",
   },
-  {
-    icon: Bot,
-    title: "AI Hotel Assistant",
-    desc: "Ask natural-language questions about rooms, guests, payments, reports, and operations.",
-    command: "Which rooms need attention today?",
-  },
+  // {
+  //   icon: Bot,
+  //   title: "AI Hotel Assistant",
+  //   desc: "Ask natural-language questions about rooms, guests, payments, reports, and operations.",
+  //   command: "Which rooms need attention today?",
+  // },
+
 ];
 
 const AiFeatures = () => {
@@ -60,7 +61,7 @@ const AiFeatures = () => {
         >
           {/* <span>AI Features</span> */}
           <h2>
-            ASmart Hospitality: AI-Driven 
+            A Smart Hospitality: AI-Driven 
             <strong>Hotel Operations</strong>
           </h2>
           <p>

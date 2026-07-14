@@ -147,7 +147,7 @@ const HotelModules = () => {
 
       <div className="modules-container">
         <div className="modules-header">
-          <span>HotelX Modules</span>
+          {/* <span>HotelX Modules</span> */}
 
           <h2>
             Unify Your Entire Hospitality 

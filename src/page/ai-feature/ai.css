@@ -80,7 +80,8 @@
 
 .ai-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
+  justify-content: center;
   gap: 18px;
 }
 
@@ -243,13 +244,6 @@
   color: #38bdf8;
 }
 
-/* Large laptops */
-@media (max-width: 1560px) {
-  .ai-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 /* Small laptops / large tablets */
 @media (max-width: 1300px) {
   .ai-section {
@@ -257,7 +251,6 @@
   }
 
   .ai-grid {
-    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
   }
 
@@ -285,7 +278,7 @@
   }
 
   .ai-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 340px));
   }
 
   .ai-card {
@@ -308,6 +301,7 @@
   }
 
   .ai-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 380px));
     gap: 14px;
   }
 
