@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, MessageCircle } from "lucide-react";
+import { ArrowRight, CheckCircle2, MessageCircle ,Sparkles} from "lucide-react";
 import "./cta-2.css";
 
 export default function CTATwo() {
@@ -16,7 +16,9 @@ export default function CTATwo() {
         viewport={{ once: true }}
       >
         <div className="cta-two-content">
-          <span className="cta-two-badge">HotelX Management Platform</span>
+          <span className="cta-two-badge">             <Sparkles size={15} /> &nbsp;
+HotelX by Hashverx
+</span>
 
           <h2>
            Ready to replace 
@@ -52,7 +54,7 @@ export default function CTATwo() {
 
           <a href="#contact" className="cta-two-secondary">
             <MessageCircle size={18} />
-            Consult with a Hospitality Solutions Architect
+            Virtual Hotel Tour
           </a>
 
           {/* <div className="cta-two-note">

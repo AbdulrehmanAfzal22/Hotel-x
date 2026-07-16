@@ -52,7 +52,7 @@ const CompetitorTable = () => {
       <div className="compare-header">
         {/* <span>Comparison</span> */}
         <h2>
-        <strong>One software</strong> All needs
+        <strong>One Software</strong> All Needs
         </h2>
         <p>
           A cleaner, smarter hotel management system built for modern hotel

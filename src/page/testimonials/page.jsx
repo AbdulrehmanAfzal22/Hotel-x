@@ -7,7 +7,7 @@ const testimonials = [
   {
     quote:
 
-      "Before this system, our front desk, cafe, and housekeeping teams were on completely separate applications. Unifying everything into one dashboard completely eliminated walk-in room assignment errors .",
+      "Before HotelX, our front desk, cafe, and housekeeping teams were on completely separate applications. Unifying everything into one dashboard completely eliminated walk-in room assignment errors .",
 
     highlight: "Daily operations became faster",
     name: "Ammar Khan",
@@ -48,11 +48,11 @@ export default function Testimonials() {
   return (
     <section className="hotelx-testimonials" id="testimonials">
       <div className="hotelx-testimonials-header">
-        <span className="hotelx-testimonials-badge">Testimonials</span>
+        {/* <span className="hotelx-testimonials-badge">Testimonials</span> */}
 
         <h2>
-          Loved by hotel teams,
-          <span> trusted by hospitality brands.</span>
+          Loved by Hotel Teams,
+          <span> Trusted by Hospitality Brands</span>
         </h2>
 
         <p>

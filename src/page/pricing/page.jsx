@@ -49,7 +49,7 @@ const plans = [
     price: "Custom",
     period: "",
     tag: "For hotel groups",
-    desc: "ATailored for large hotel groups, franchises, and multi-branch networks requiring deep administrative oversight.",
+    desc: "A Tailored for large hotel groups, franchises, and multi-branch networks requiring deep administrative oversight.",
     features: [
       "Unlimited Hotel Branches",
       "Consolidated Corporate Dashboard",
@@ -78,13 +78,13 @@ export default function Pricing() {
         >
 
           <h2>
-            Flexible plans for
-            <strong> modern hospitality.</strong>
+            Flexible Plans for
+            <strong> Modern Hospitality</strong>
           </h2>
 
           <p>
             Pick the right plan for your hotel, your team, and the guest
-            experience you want to deliver.
+            experience you want to deliver
           </p>
         </motion.div>
 

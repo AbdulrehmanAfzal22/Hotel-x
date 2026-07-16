@@ -10,7 +10,7 @@ import "./ai.css";
 const aiFeatures = [
   {
     icon: ReceiptText,
-    title: "Instant RevPAR Optimization",
+    title: "Instant RevPAR ",
     desc: " Maximize room occupancy and RevPAR instantly. Our intelligent engine adjusts room rates in real time based on local market demand, seasonal shifts, and competitor data across every hotel location. ",
  command: "    Boost occupancy & RevPAR with AI real-time pricing.",
   },
@@ -22,8 +22,8 @@ const aiFeatures = [
   },
   {
     icon: Users,
-    title: "AI Insights to lower climate control and lighting costs.",
-    desc: "The platform interfaces with smart utility grids. The moment a guest checks out via their mobile portal, the system automatically triggers Eco-Mode to lower climate control and lighting costs.",
+    title: "Insights to lower climate control and lighting costs",
+    desc: "The platform integrates with smart utility grids. After mobile checkout, Eco Mode automatically reduces lighting and climate control costs.",
 
     command: "Activate Eco Mode",
   },
@@ -60,8 +60,8 @@ const AiFeatures = () => {
         >
           {/* <span>AI Features</span> */}
           <h2>
-            A Smart Hospitality: AI-Driven 
-            <strong>Hotel Operations</strong>
+            A Smart Hospitality: AI-Driven             <strong>Hotel Operations</strong>
+
           </h2>
           <p>
             HotelX AI helps managers understand bookings, guests, revenue,

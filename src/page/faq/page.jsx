@@ -46,7 +46,7 @@ export default function FAQ() {
 
         <h2>
           Everything you need to
-          <strong> know about HotelX.</strong>
+          <strong> know about HotelX</strong>
         </h2>
 
         <p>

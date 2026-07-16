@@ -23,7 +23,7 @@ export default function HotelClients() {
         </span> */}
 
         <h2>
-           Trusted by Boutique Hotels, 
+           Trusted by Boutique Hotels,&nbsp; <br />
 
 
           <span>Luxury Resorts, and Global Hospitality Chains</span>

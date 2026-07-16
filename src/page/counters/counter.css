@@ -1,10 +1,10 @@
 .counter-section {
   width: 100%;
   padding: 40px 5% 70px;
-  background:
+  /* background:
     radial-gradient(circle at 15% 20%, rgba(20, 216, 255, 0.16), transparent 24%),
     radial-gradient(circle at 85% 80%, rgba(124, 58, 237, 0.12), transparent 28%),
-    linear-gradient(135deg, var(--page-bg-start) 0%, var(--page-bg-mid) 48%, var(--page-bg-end) 100%);
+    transparent; */
   font-family: "Manrope", sans-serif;
 }
 

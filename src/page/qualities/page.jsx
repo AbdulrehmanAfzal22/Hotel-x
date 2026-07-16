@@ -150,7 +150,7 @@ const HotelModules = () => {
           {/* <span>HotelX Modules</span> */}
 
           <h2>
-            Unify Your Entire Hospitality 
+            Unify Your Entire Hospitality  <br />
             <strong> Ecosystem in One Dashboard</strong>
           </h2>
 

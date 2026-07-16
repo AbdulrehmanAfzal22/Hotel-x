@@ -15,11 +15,11 @@
 }
 
 .cta-two-glow-one {
-  width: 360px;
-  height: 360px;
-  background: #14d8ff;
-  left: -140px;
-  top: 40px;
+    width: 360px;
+    height: 360px;
+    background: #ffffff;
+    left: -140px;
+    top: 40px;
 }
 
 .cta-two-glow-two {
@@ -68,15 +68,17 @@
 }
 
 .cta-two h2 {
-  margin: 0;
-  max-width: 720px;
-  font-size: clamp(28px, 3.7vw, 52px);
-  line-height: 1.1;
-  letter-spacing: -2px;
-  font-weight: 900;
-  color: #111827;
-  overflow-wrap: break-word;
-  word-break: break-word;
+    margin: 0 auto;
+    max-width: 740px;
+    font-size: clamp(28px, 3.7vw, 43px);
+    line-height: 1.1;
+    letter-spacing: -2px;
+    font-weight: 900;
+    color: #111827;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    text-align: center;
+
 }
 
 .cta-two h2 span {
@@ -87,11 +89,12 @@
 
 .cta-two p {
   max-width: 680px;
-  margin: 16px 0 0;
+  margin: 16px auto 0;
   font-size: clamp(14.5px, 1.6vw, 17px);
   line-height: 1.65;
   color: #64748b;
   font-weight: 500;
+  text-align: center;
 }
 
 .cta-two-points {

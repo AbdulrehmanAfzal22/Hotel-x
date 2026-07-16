@@ -22,8 +22,8 @@ const Hero = () => {
           </span>
 
           <h1>
-            The Enterprise Hotel OS: Connect Reception,
-            <br />
+            The Enterprise Hotel OS: Connect Reception, 
+            &nbsp;
             <span>Inventory, and Multi-Branch Hospitality Networks</span>
           </h1>
 
@@ -35,11 +35,11 @@ food inventory, cafe POS, and car rentals across all your hotel branches.
 
           <div className="hero-actions">
             <a href="#contact" className="primary-btn">
-              Schedule a Live Hotel Demo <ArrowRight size={20} />
+              Schedule a Live Demo <ArrowRight size={20} />
             </a>
 
             <a href="#features" className="secondary-btn">
-              View System Architecture
+              View System 
             </a>
           </div>
 
