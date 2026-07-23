@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, MessageCircle ,Sparkles} from "lucide-react";
-import "./cta-2.css";
+import "./style.css";
 import { ctaTwoContent } from "../../data/staticData";
 
 export default function CTATwo() {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
-import "./faq.css";
+import "./style.css";
 import { faqs, faqSectionContent } from "../../data/staticData";
 
 export default function FAQ() {

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "./ai.css";
+import "./style.css";
 import { aiFeatures, aiSectionContent } from "../../data/staticData";
 
 const AiFeatures = () => {

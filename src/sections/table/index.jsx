@@ -1,5 +1,5 @@
 import { Check, X } from "lucide-react";
-import "./table.css";
+import "./style.css";
 import { companies, comparisonRows, tableSectionContent } from "../../data/staticData";
 
 const CompetitorTable = () => {

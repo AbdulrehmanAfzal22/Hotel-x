@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import "./qualities.css";
+import "./style.css";
 import { modules, qualitiesSectionContent } from "../../data/staticData";
 
 const HotelModules = () => {

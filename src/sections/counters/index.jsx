@@ -1,6 +1,6 @@
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
-import "./counter.css";
+import "./style.css";
 import { stats } from "../../data/staticData";
 
 const Counters = () => {

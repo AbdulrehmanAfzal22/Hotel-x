@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail, ArrowUp } from "lucide-react";
-import "./footer.css";
+import "./style.css";
 import { footerContent, socialLinks } from "../../data/staticData";
 
 export default function Footer() {

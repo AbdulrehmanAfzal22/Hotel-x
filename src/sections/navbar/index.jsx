@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./navbar.css";
+import "./style.css";
 import { navLinks, navbarCta } from "../../data/staticData";
 
 const Navbar = () => {

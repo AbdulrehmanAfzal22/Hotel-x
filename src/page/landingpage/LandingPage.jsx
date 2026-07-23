@@ -1,21 +1,36 @@
-import Header from "../../components/Header/Header";
-import Hero from "../../components/Hero/Hero";
-import About from "../../components/About/About";
-import Features from "../../components/Features/Features";
-import Testimonials from "../../components/Testimonials/Testimonials";
-import Contact from "../../components/Contact/Contact";
-import Footer from "../../components/Footer/Footer";
-
+import Header from "../../sections/navbar/index";
+import HeroSection from "../../sections/hero/index.jsx";
+import Marquee from "../../sections/officials/index.jsx";
+import Counters from "../../sections/counters/index.jsx";
+import AiFeatures from "../../sections/ai-feature/index.jsx";
+import CTA from "../../sections/cta/index.jsx";
+import HotelModules from "../../sections/qualities/index.jsx";
+import HotelClients from "../../sections/client/index.jsx";
+import CompetitorTable from "../../sections/table/index.jsx";
+import TestimonialsSection from "../../sections/testimonials/index.jsx";
+import CTATwo from "../../sections/cta-2/index.jsx";
+import Pricing from "../../sections/pricing/index.jsx";
+import FAQ from "../../sections/faq/index.jsx";
+import ContactSection from "../../sections/contact/index.jsx";
+import Footer from "../../sections/footer/index.jsx";
 function LandingPage() {
   return (
     <>
       <Header />
       <main>
-        <Hero />
-        <About />
-        <Features />
-        <Testimonials />
-        <Contact />
+        <HeroSection />
+        <Marquee />
+        <Counters />
+        <AiFeatures />
+        <CTA />
+        <HotelModules />
+        <HotelClients />
+        <CompetitorTable />
+        <TestimonialsSection />
+        <CTATwo />
+        <Pricing />
+        <FAQ />
+        <ContactSection/>
       </main>
       <Footer />
     </>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import "./testimonials.css";
+import "./style.css";
 import { testimonials, testimonialsSectionContent } from "../../data/staticData";
 
 export default function Testimonials() {

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import "./pricing.css";
+import "./style.css";
 import { pricingPlans, pricingSectionContent } from "../../data/staticData";
 
 export default function Pricing() {

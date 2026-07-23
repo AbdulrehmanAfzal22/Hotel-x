@@ -13,7 +13,7 @@ import {
   Loader2,
   X,
 } from "lucide-react";
-import "./contact.css";
+import "./style.css";
 
 export default function Contact() {
   const [status, setStatus] = useState("idle"); // idle | sending | sent | error

@@ -1,5 +1,5 @@
 import React from "react";
-import "./officials.css";
+import "./style.css";
 import { officialLogos, officialSectionContent } from "../../data/staticData";
 
 const LOGOS = officialLogos;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./client.css";
+import "./style.css";
 import { clientLogos, clientSectionContent } from "../../data/staticData";
 
 const LOGOS = clientLogos;

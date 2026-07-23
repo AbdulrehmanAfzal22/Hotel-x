@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
-import "./cta.css";
+import "./style.css";
 import { ctaContent } from "../../data/staticData";
 
 const CTA = () => {
